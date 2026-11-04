@@ -7,15 +7,15 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.app.database.session import Base, engine, SessionLocal
-from backend.app.models.db_models import ModelMetadata
-from backend.app.api.auth import router as auth_router
-from backend.app.api.dashboard import router as dashboard_router
-from backend.app.api.analytics import router as analytics_router
-from backend.app.api.models import router as models_router
-from backend.app.api.predictions import router as predictions_router
-from backend.app.schemas.schemas import EmployeePredictionInput, PredictionResult
-from backend.app.api.predictions import create_prediction
+from app.database.session import Base, engine, SessionLocal
+from app.models.db_models import ModelMetadata
+from app.api.auth import router as auth_router
+from app.api.dashboard import router as dashboard_router
+from app.api.analytics import router as analytics_router
+from app.api.models import router as models_router
+from app.api.predictions import router as predictions_router
+from app.schemas.schemas import EmployeePredictionInput, PredictionResult
+from app.api.predictions import create_prediction
 
 
 # Ensure database tables exist immediately on import
