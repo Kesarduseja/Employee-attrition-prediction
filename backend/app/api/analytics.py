@@ -4,7 +4,7 @@ Provides interactive multi-dimensional dataset aggregations with filter support.
 """
 from typing import Optional
 from fastapi import APIRouter, Query
-from backend.app.services.analytics_service import get_analytics_service
+from app.services.analytics_service import get_analytics_service
 
 router = APIRouter(prefix="/analytics", tags=["Analytics"])
 

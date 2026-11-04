@@ -7,7 +7,7 @@ import os
 import joblib
 import pandas as pd
 import numpy as np
-from backend.ml.preprocessing import ALL_FEATURE_COLUMNS
+from ml.preprocessing import ALL_FEATURE_COLUMNS
 
 
 class PredictionEngine:

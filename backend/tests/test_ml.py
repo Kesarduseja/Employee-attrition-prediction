@@ -4,8 +4,8 @@ Automated unit tests for ML pipeline, preprocessing, and prediction engine.
 import pytest
 import os
 import pandas as pd
-from backend.ml.preprocessing import load_raw_dataset, clean_features, build_preprocessor, ALL_FEATURE_COLUMNS
-from backend.ml.predict import get_prediction_engine
+from ml.preprocessing import load_raw_dataset, clean_features, build_preprocessor, ALL_FEATURE_COLUMNS
+from ml.predict import get_prediction_engine
 
 
 def test_dataset_loading():

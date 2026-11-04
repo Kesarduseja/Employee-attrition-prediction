@@ -6,8 +6,8 @@ and comparative algorithm performance against the naive baseline.
 import os
 import json
 from fastapi import APIRouter, HTTPException, status
-from backend.ml.train import train_and_evaluate_models
-from backend.ml.predict import get_prediction_engine
+from ml.train import train_and_evaluate_models
+from ml.predict import get_prediction_engine
 
 router = APIRouter(prefix="/models", tags=["Model Performance"])
 

@@ -3,7 +3,7 @@ Automated integration tests for FastAPI REST APIs, database persistence, and val
 """
 import pytest
 from fastapi.testclient import TestClient
-from backend.app.main import app
+from appport app
 
 client = TestClient(app)
 

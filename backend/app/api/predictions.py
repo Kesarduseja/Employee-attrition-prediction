@@ -9,14 +9,14 @@ from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.orm import Session
 from sqlalchemy import desc
 
-from backend.app.database.session import get_db
-from backend.app.models.db_models import PredictionHistory
-from backend.app.schemas.schemas import (
+from app.database.session import get_db
+from app.models.db_models import PredictionHistory
+from app.schemas.schemas import (
     EmployeePredictionInput,
     PredictionResult,
     PredictionRecordResponse
 )
-from backend.ml.predict import get_prediction_engine
+from ml.predict import get_prediction_engine
 
 router = APIRouter(prefix="/predictions", tags=["Predictions"])
 

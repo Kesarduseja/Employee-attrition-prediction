@@ -3,7 +3,7 @@ HR Insight - Authentication Router
 Provides simple local demo authentication for HR personnel.
 """
 from fastapi import APIRouter, HTTPException, status
-from backend.app.schemas.schemas import LoginRequest, LoginResponse
+from app.schemas.schemas import LoginRequest, LoginResponse
 
 router = APIRouter(prefix="/auth", tags=["Authentication"])
 
