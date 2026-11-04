@@ -3,7 +3,7 @@ SQLAlchemy ORM models for Prediction History and Model Metadata.
 """
 from datetime import datetime
 from sqlalchemy import Column, Integer, String, Float, DateTime, JSON
-from backend.app.database.session import Base
+from app.database.session import Base
 
 
 class PredictionHistory(Base):
